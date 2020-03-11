@@ -67,13 +67,13 @@ let backgroundSet = (location, description) => {
 
     if(location === "Katowice"){
         form_section.style.setProperty("background-image", "url(./images/kato.jpg)");
-    } else if (description.indexOf("clouds")){
+    } else if (description.includes("clouds")){
         form_section.style.setProperty("background-image", "url(./images/clouds.jpg)");
-    } else if (description.indexOf("snow")){
+    } else if (description.includes("snow")){
         form_section.style.setProperty("background-image", "url(./images/snow.jpg)");
-    } else if (description.indexOf("rain")){
+    } else if (description.includes("rain")){
         form_section.style.setProperty("background-image", "url(./images/rain.jpg)");
-    } else if (description.indexOf("sun")){
+    } else if (description.includes("sun") || description.includes("clear")){
         form_section.style.setProperty("background-image", "url(./images/sun.jpg)");
     } else {
         form_section.style.setProperty("background-image", "url(./images/weather.jpg)");
