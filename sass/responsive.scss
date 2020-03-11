@@ -1,0 +1,75 @@
+@media (max-width: 866px){
+  .main-section .form-section .form-group .form-text {
+    font-size: 32px;
+  }
+  .main-section .form-section .form-group .form-control {
+    font-size: 16px;
+  }
+  .main-section .form-section .form-group .btn {
+    font-size: 14px;
+  }
+  .main-section .form-section .form-group {
+    margin-top: 52%;
+  }
+  .main-section .weather-section .main-title {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .main-section .weather-section .main-title .location {
+    font-size: 37px;
+  }
+  .main-section .weather-section .description .description__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .main-section .weather-section .description .description__text {
+    font-size: 21px;
+  }
+  .main-section .weather-section .temperature__info {
+    font-size: 22px;
+  }
+}
+@media (max-width: 660px){
+  .main-section .form-section .form-group .form-text {
+    font-size: 27px;
+  }
+  .main-section .form-section .form-group .form-control {
+    font-size: 14px;
+  }
+  .main-section .weather-section .main-title {
+    font-size: 21px;
+  }
+  .main-section .weather-section .main-title .location {
+    font-size: 34px;
+  }
+}
+@media (max-width: 580px){
+  .main-section .form-section {
+    width: 100%;
+    border-radius: 0px;
+    min-height: 0;
+    max-height: 251px;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+  }
+  .main-section {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .main-section .weather-section {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .list__element:first-child {
+    border-top-left-radius: 10px;
+  }
+  .main-section .list__element:last-child {
+    border-bottom-left-radius: 10px;
+  }
+  .main-section .form-section .form-group .btn {
+    margin-bottom: 30px;
+  }
+  .main-section .form-section .form-group {
+    margin-top: 9%;
+  }
+}

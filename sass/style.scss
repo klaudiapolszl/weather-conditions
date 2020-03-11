@@ -1,0 +1,138 @@
+$white: #fff;
+$grey: #e3e8ec;
+$violet: #6d68af;
+$dark-violet: #343788;
+$dark-grey: #707073;
+$black: #000;
+
+body {
+  background-color: $grey;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main-section{
+  background-color: $white;
+  width: 90%;
+  min-height: 500px;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  .form-section{
+    background-image: url(../images/kato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 500px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    .form-group{
+      text-align: center;
+      margin-top: 34%;
+      .form-control{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 21px;
+        padding: 8px 6px;
+        font-size: 21px;
+        text-align: center;
+        border: none;
+        text-transform: uppercase;
+        color: $black;
+        background-color: $white;
+        font-weight: bold;
+        &:focus {
+          background-color: $white;
+          border: 3px solid $violet;
+          outline: none;
+          transition-duration: 0.3s;
+        }
+      }
+      .btn{
+        background-color: $violet;
+        padding: 10px 27px;
+        border: none;
+        border-radius: 17px;
+        color: $white;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 14px;
+        font-size: 16px;
+        font-weight: bolder;
+        &:focus{
+          border: none;
+          outline: none;
+          transition-duration: 2s;
+          background-color: $grey;
+        }
+        &:hover{
+          transition-duration: 1s;
+          background-color: $dark-grey;
+          cursor: pointer;
+        }
+      }
+
+      .form-text{
+        font-size: 50px;
+        color: $white;
+        line-height: 1.3;
+        text-shadow: 0 0 6px $black;
+      }
+    }
+  }
+  .weather-section{
+    width: 50%;
+    text-align: center;
+    .main-title {
+      font-size: 32px;
+      margin-bottom: 5px;
+
+      .location {
+        font-size: 48px;
+        color: $dark-grey;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .weather-title {
+        margin-bottom: 0px;
+      }
+    }
+      .temperature__icon{
+        width: 70px;
+      }
+      .description{
+        display: flex;
+        justify-content: center;
+        .description__icon{
+          width: 80px;
+        }
+        .description__text{
+          font-size: 26px;
+        }
+      }
+      .temperature__info{
+        font-size: 26px;
+      }
+    }
+    .list__element{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 18px;
+      color: $white;
+      text-align: center;
+      border-top: 1px solid $white;
+      list-style-type: none;
+      margin-left: -40px;
+      background-color: $dark-violet;
+      &:first-child{
+        border-top-right-radius: 10px;
+      }
+      &:last-child{
+        border-bottom-right-radius: 10px;
+      }
+    }
+}
