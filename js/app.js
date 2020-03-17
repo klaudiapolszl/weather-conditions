@@ -18,8 +18,6 @@ const getWeatherInfo = async ( city ) => {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e066f50227d64e3af0e4296523d85c5a`;
         let response = await request(url);
 
-        console.log(response);
-
         let location = response.name;
         let wind_speed = response.wind.speed;
         let pressure = response.main.pressure;
@@ -33,14 +31,14 @@ const getWeatherInfo = async ( city ) => {
         let unix_sunrise = response.sys.sunrise;
         let date_sunrise = new Date(unix_sunrise * 1000);
         let hours_sunrise = date_sunrise.getHours();
-        let minutes_sunrise = "0" + date_sunrise.getMinutes()
+        let minutes_sunrise = "0" + date_sunrise.getMinutes();
         let seconds_sunrise = "0" + date_sunrise.getSeconds();
         let formatted_time_sunrise = hours_sunrise + ':' + minutes_sunrise.substr(-2) + ':' + seconds_sunrise.substr(-2);
 
         let unix_sunset = response.sys.sunset;
         let date_sunset = new Date(unix_sunset * 1000);
         let hours_sunset = date_sunset.getHours();
-        let minutes_sunset = "0" + date_sunset.getMinutes()
+        let minutes_sunset = "0" + date_sunset.getMinutes();
         let seconds_sunset = "0" + date_sunset.getSeconds();
         let formatted_time_sunset = hours_sunset + ':' + minutes_sunset.substr(-2) + ':' + seconds_sunset.substr(-2);
 
