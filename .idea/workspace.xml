@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50746c9-cacf-462d-8ee1-fc0575f754c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,10 +20,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-              <folding>
-                <element signature="e#13#19#0" expanded="true" />
-                <element signature="e#20#26#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="65" selection-start-column="65" selection-end-column="65" />
+              <first_editor relative-caret-position="69">
+                <caret line="3" column="79" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="79" />
               </first_editor>
               <second_editor />
             </state>
@@ -73,6 +69,11 @@
               <item name="weather-conditions" type="b2602c69:ProjectViewProjectNode" />
               <item name="weather-conditions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="weather-conditions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-conditions" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -109,16 +110,16 @@
       <updated>1583969738870</updated>
       <workItem from="1583969741651" duration="679000" />
       <workItem from="1584024846894" duration="6040000" />
-      <workItem from="1584487713124" duration="1054000" />
+      <workItem from="1584487713124" duration="2010000" />
+      <workItem from="1585948528833" duration="358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7773000" />
+    <option name="totallyTimeSpent" value="9087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -162,18 +163,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#13#19#0" expanded="true" />
-            <element signature="e#20#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="65" selection-start-column="65" selection-end-column="65" />
+          <first_editor relative-caret-position="69">
+            <caret line="3" column="79" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="79" />
           </first_editor>
           <second_editor />
         </state>

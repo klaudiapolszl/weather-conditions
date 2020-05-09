@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Weather conditions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500" rel="stylesheet">
-</head>
-
-<body>
+  </head>
+  <body>
    <div class="container">
-       <div class="main-section">
-           <div class="form-section">
-               <form action="" method="get" id="form">
-                   <div class="form-group">
-                       <label for="q" class="form-text">Get weather information <br> about another city</label>
-                       <input type="text" id="q" name="q" class="form-control" placeholder="City">
-                       <input type="submit" class="btn" value="Search">
-                   </div>
-               </form>
-           </div>
-           <div class="weather-section">
-               <div class="main-title">
-                   <p class="weather-title">Current weather conditions in</p>
-                   <div class="location"></div>
-               </div>
-               <div class="temperature">
-                   <div class="description">
-                       <img class="description__icon">
-                       <p class="description__text"></p>
-                   </div>
-                   <div class="temperature__info">
-                       <div class="temperature__value"> &nbsp;<sup>o</sup>C &nbsp;| &nbsp;</div>
-                       <div class="temperature__sensed"> &nbsp;<sup>o</sup>C</div>
-                   </div>
-               </div>
-
-               <ul class="weather-list">
-                   <li class="list__element wind_speed"></li>
-                   <li class="list__element pressure"></li>
-                   <li class="list__element humidity"></li>
-                   <li class="list__element cloudiness"></li>
-                   <li class="list__element sunrise"></li>
-                   <li class="list__element sunset"></li>
-               </ul>
-           </div>
-       </div>
+    <div class="main-section">
+      <div class="form-section">
+       <form action="" method="get" id="form">
+         <div class="form-group">
+           <label for="city" class="form-text">Get weather information <br> about another city</label>
+           <input type="text" id="city" name="city" class="form-control" placeholder="City">
+           <input type="submit" class="btn" value="Search">
+         </div>
+       </form>
+      </div>
+      <div class="weather-section">
+        <div class="main-title">
+          <p class="weather-title">Current weather conditions in</p>
+          <div class="location"></div>
+        </div>
+        <div class="temperature">
+          <div class="description">
+            <img class="description__icon">
+            <p class="description__text"></p>
+          </div>
+          <div class="temperature__info">
+            <div class="temperature__value"><sup>o</sup>C</div>
+            <div class="temperature__sensed"><sup>o</sup>C</div>
+          </div>
+        </div>
+        <ul class="weather-list">
+          <li class="list__element wind_speed"></li>
+          <li class="list__element pressure"></li>
+          <li class="list__element humidity"></li>
+          <li class="list__element cloudiness"></li>
+          <li class="list__element sunrise"></li>
+          <li class="list__element sunset"></li>
+        </ul>
+      </div>
+     </div>
    </div>
-
-    <script src="js/app.js"> </script>
-</body>
+   <script src="js/app.js"> </script>
+  </body>
 </html>

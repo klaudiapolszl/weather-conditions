@@ -16,9 +16,7 @@ body {
   width: 90%;
   min-height: 500px;
   border-radius: 40px;
-  margin: 0 auto;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin: 4% auto;
   display: flex;
   .form-section{
     background-image: url(../images/kato.jpg);
@@ -33,17 +31,16 @@ body {
       margin-top: 34%;
       .form-control{
         display: block;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto auto auto;
         border-radius: 21px;
         padding: 8px 6px;
         font-size: 21px;
+        font-weight: bold;
         text-align: center;
         border: none;
         text-transform: uppercase;
         color: $black;
         background-color: $white;
-        font-weight: bold;
         &:focus {
           background-color: $white;
           border: 3px solid $violet;
@@ -58,8 +55,7 @@ body {
         border-radius: 17px;
         color: $white;
         text-transform: uppercase;
-        margin: 0 auto;
-        margin-top: 14px;
+        margin: 14px auto auto auto;
         font-size: 16px;
         font-weight: bolder;
         &:focus{
@@ -73,7 +69,6 @@ body {
           cursor: pointer;
         }
       }
-
       .form-text{
         font-size: 50px;
         color: $white;
@@ -88,50 +83,48 @@ body {
     .main-title {
       font-size: 32px;
       margin-bottom: 5px;
-
       .location {
         font-size: 48px;
         color: $dark-grey;
         text-transform: uppercase;
         font-weight: 500;
       }
-
       .weather-title {
         margin-bottom: 0px;
       }
     }
-      .temperature__icon{
-        width: 70px;
+    .temperature__icon{
+      width: 70px;
+    }
+    .description{
+      display: flex;
+      justify-content: center;
+      .description__icon{
+        width: 80px;
       }
-      .description{
-        display: flex;
-        justify-content: center;
-        .description__icon{
-          width: 80px;
-        }
-        .description__text{
-          font-size: 26px;
-        }
-      }
-      .temperature__info{
+      .description__text{
         font-size: 26px;
       }
     }
-    .list__element{
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-size: 18px;
-      color: $white;
-      text-align: center;
-      border-top: 1px solid $white;
-      list-style-type: none;
-      margin-left: -40px;
-      background-color: $dark-violet;
-      &:first-child{
-        border-top-right-radius: 10px;
-      }
-      &:last-child{
-        border-bottom-right-radius: 10px;
-      }
+    .temperature__info{
+      font-size: 26px;
     }
+  }
+  .list__element{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    border-top: 1px solid $white;
+    list-style-type: none;
+    margin-left: -40px;
+    background-color: $dark-violet;
+    &:first-child{
+      border-top-right-radius: 10px;
+    }
+    &:last-child{
+      border-bottom-right-radius: 10px;
+    }
+  }
 }
