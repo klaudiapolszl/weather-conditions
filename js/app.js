@@ -55,27 +55,27 @@ const getWeatherInfo = async ( city ) => {
 
     backgroundSet(location, description);
   } catch(err) {
-    console.log(err);
+    alert(err);
   }
 };
 
 let backgroundSet = (location, description) => {
+  const backgroundOption = ["clouds","snow","rain","sun","clear"];
   let form_section = document.querySelector('.form-section');
 
   if(location === "Katowice"){
     form_section.style.setProperty("background-image", "url(./images/kato.jpg)");
-  } else if (description.includes("clouds")){
-    form_section.style.setProperty("background-image", "url(./images/clouds.jpg)");
-  } else if (description.includes("snow")){
-    form_section.style.setProperty("background-image", "url(./images/snow.jpg)");
-  } else if (description.includes("rain")){
-    form_section.style.setProperty("background-image", "url(./images/rain.jpg)");
-  } else if (description.includes("sun") || description.includes("clear")){
-    form_section.style.setProperty("background-image", "url(./images/sun.jpg)");
-  } else {
-    form_section.style.setProperty("background-image", "url(./images/weather.jpg)");
+  } else{
+    let background = backgroundOption.some(bg => {
+      if (description.includes(bg)){
+        form_section.style.setProperty("background-image", `url(./images/${bg}.jpg)`);
+        return true
+      } else {
+        form_section.style.setProperty("background-image", "url(./images/weather.jpg)");
+      }
+      })
+    }
   }
-};
 
 document.addEventListener('DOMContentLoaded', () => {
   const city = "Katowice";
